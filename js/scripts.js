@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const checkbox1 = document.getElementById("answer1");
     const checkbox2 = document.getElementById("answer2");
     const checkbox3 = document.getElementById("answer3");
+    const checkbox4 = document.getElementById("answer4");
     const submitBtn = document.getElementById("submitBtn");
 
 
@@ -9,10 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
     checkbox1.addEventListener("change", habilitarBotao);
     checkbox2.addEventListener("change", habilitarBotao);
     checkbox3.addEventListener("change", habilitarBotao);
+    checkbox4.addEventListener("change", habilitarBotao);
 
     // Função para habilitar o botão se pelo menos uma caixa de seleção estiver marcada
     function habilitarBotao() {
-        if (checkbox1.checked || checkbox2.checked || checkbox3.checked) {
+        if (checkbox1.checked || checkbox2.checked || checkbox3.checked || checkbox4.checked) {
             submitBtn.disabled = false;
         } else {
             submitBtn.disabled = true;
