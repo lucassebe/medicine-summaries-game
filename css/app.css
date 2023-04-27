@@ -1,13 +1,16 @@
-html {
-    font-family: sans-serif;
-    height: 100vh;
-}
-
-@media (max-width: 576px) {
     html {
-        font-size: 0.8rem;
+        font-family: sans-serif;
     }
-    #questionspage {
-        font-size: 1.2rem;
+    
+    @media (max-width: 576px) {
+        html {
+            font-size: 0.8rem;
+        }
+        #questionspage {
+            font-size: 1.2rem;
+        }
     }
-}
+    
+    #choice {
+        font-family: sans-serif;
+    }
